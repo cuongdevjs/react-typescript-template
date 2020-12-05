@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"downlevelIteration": true,
+		"noImplicitAny": true,
+		"target": "es5",
+		"lib": ["es5", "es6", "dom", "dom.iterable"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react",
+		"baseUrl": "./",
+		"removeComments": true,
+		"sourceMap": true,
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@public/*": ["public/*"],
+      "@containers/*": ["src/containers/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@config/*": ["src/config/*"],
+      "@styles/*": ["src/styles/*"],
+      "@node_modules/*": ["node_modules/*"]
+    }
+	},
+	"awesomeTypescriptLoaderOptions": {},
+	"exclude": [
+		"node_modules",
+		"dist",
+		".babelrc"
+	],
+	"include": ["**/*.ts", "**/*.tsx"]
+}
