@@ -17,7 +17,7 @@ RUN npm run build
 
 
 
-FROM nginx:alpine
+FROM nginx:1.25.3-alpine3.18
 COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=build /panoee-studio/build/ /usr/share/nginx/html
